@@ -6,17 +6,17 @@ description := "Sangria play-json marshalling"
 homepage := Some(url("http://sangria-graphql.org"))
 licenses := Seq("Apache License, ASL Version 2.0" → url("http://www.apache.org/licenses/LICENSE-2.0"))
 
-scalaVersion := "2.12.7"
-crossScalaVersions := Seq("2.11.11", "2.12.7")
+scalaVersion := "2.12.8"
+crossScalaVersions := Seq("2.11.12", "2.12.8", "2.13.0")
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
 libraryDependencies ++= Seq(
   "org.sangria-graphql" %% "sangria-marshalling-api" % "1.0.3",
-  "com.typesafe.play" %% "play-json" % "2.6.10",
+  "com.typesafe.play" %% "play-json" % "2.7.4",
 
   "org.sangria-graphql" %% "sangria-marshalling-testkit" % "1.0.1" % "test",
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test")
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test")
 
 // Publishing
 
