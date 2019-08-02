@@ -1,5 +1,5 @@
 name := "sangria-play-json"
-organization := "org.sangria-graphql"
+organization := "com.github.pjfanning.sangria"
 version := "1.0.6-SNAPSHOT"
 
 description := "Sangria play-json marshalling"
@@ -11,11 +11,13 @@ crossScalaVersions := Seq("2.11.12", "2.12.8", "2.13.0")
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
+resolvers += Resolver.sonatypeRepo("snapshots")
+
 libraryDependencies ++= Seq(
-  "org.sangria-graphql" %% "sangria-marshalling-api" % "1.0.3",
+  "com.github.pjfanning.sangria" %% "sangria-marshalling-api" % "1.0.4-SNAPSHOT",
   "com.typesafe.play" %% "play-json" % "2.7.4",
 
-  "org.sangria-graphql" %% "sangria-marshalling-testkit" % "1.0.1" % "test",
+  //"org.sangria-graphql" %% "sangria-marshalling-testkit" % "1.0.1" % "test",
   "org.scalatest" %% "scalatest" % "3.0.8" % "test")
 
 // Publishing
