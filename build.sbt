@@ -6,7 +6,7 @@ description := "Sangria play-json marshalling"
 homepage := Some(url("http://sangria-graphql.org"))
 licenses := Seq("Apache License, ASL Version 2.0" → url("http://www.apache.org/licenses/LICENSE-2.0"))
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.0"
 crossScalaVersions := Seq("2.11.12", "2.12.8", "2.13.0")
 
 scalacOptions ++= Seq("-deprecation", "-feature")
@@ -14,7 +14,7 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 libraryDependencies ++= Seq(
-  "com.github.pjfanning.sangria" %% "sangria-marshalling-api" % "1.0.4-SNAPSHOT",
+  "com.github.pjfanning.sangria" %% "sangria-marshalling-api" % "1.0.3",
   "com.typesafe.play" %% "play-json" % "2.7.4",
 
   //"org.sangria-graphql" %% "sangria-marshalling-testkit" % "1.0.1" % "test",
